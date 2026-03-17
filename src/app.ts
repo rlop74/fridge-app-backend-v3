@@ -10,10 +10,13 @@ app.use(express.json()); // to be able to use req.body
 
 // health check
 app.get("/ping", (req, res) => {
-    res.send("pong");
+  // http://localhost:<port>/ping
+  res.send("pong");
 });
 
+
 // routes
+// http://localhost:<port>/api/...
 app.use("/api", apiRoutes);
 
 export default app;

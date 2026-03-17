@@ -9,6 +9,7 @@ function appListen() {
   return app.listen(config.port, () => {
     console.log(`Server is running on port ${config.port}`);
   });
+  // http://localhost:<port>
 }
 
 const server = appListen();
